@@ -156,7 +156,7 @@ const config = {
   // Gửi qua Formspree (miễn phí): tạo form tại https://formspree.io,
   // đặt email nhận longnguyen19971997@gmail.com, dán endpoint vào đây.
   rsvp: {
-    formspreeEndpoint: "https://formspree.io/f/your_form_id",
+    formspreeEndpoint: "https://formspree.io/f/xnjgdpyn",
     receiveEmail: "longnguyen19971997@gmail.com",
   },
 };
