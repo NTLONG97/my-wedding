@@ -24,7 +24,7 @@ export default function Chapter({ chapter, accent, lines = [], images = [], alig
       </Reveal>
 
       {layout === "collage" ? (
-        <div className="-mt-14 md:-mt-16 relative">
+        <div className="mt-6 md:-mt-16 relative">
           <ChapterCollage images={images} />
         </div>
       ) : (
