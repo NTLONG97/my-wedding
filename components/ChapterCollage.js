@@ -28,7 +28,7 @@ export default function ChapterCollage({ images = [] }) {
       </div>
       {/* Ảnh phải (cao hơn, đè lên) */}
       <div
-        className={`absolute right-0 top-0 w-[56%] aspect-[3/4] rounded-lg overflow-hidden shadow-2xl ring-[6px] ring-white bg-cream-200 slide-right ${show ? "slide-in" : ""}`}
+        className={`absolute right-0 top-0 w-[50%] aspect-[3/4] rounded-lg overflow-hidden shadow-2xl ring-[6px] ring-white bg-cream-200 slide-right ${show ? "slide-in" : ""}`}
         style={{ transitionDelay: "0.15s" }}
       >
         {b && <img src={b} alt="" loading="lazy" className="w-full h-full object-cover" />}

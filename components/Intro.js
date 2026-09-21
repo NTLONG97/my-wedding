@@ -74,7 +74,7 @@ export default function Intro() {
 
   const Name = ({ p }) => (
     <div className="text-center mt-3">
-      <p className="font-serif text-sm text-ink/55 mb-0.5">{p.role}</p>
+      <p className="font-serif text-sm text-ink/80 mb-0.5">{p.role}</p>
       <p className="font-title text-3xl md:text-4xl text-[#262421] leading-tight">
         {p.displayName || p.short}
       </p>
@@ -92,8 +92,8 @@ export default function Intro() {
             <CoupleArt />
           )}
         </div>
-        <p className="font-serif tracking-[0.5em] text-sm md:text-base text-ink/70 mt-3">WELCOME</p>
-        <p className="font-script text-xs text-[#d98aa0] tracking-widest">to our wedding</p>
+        <p className="font-serif tracking-[0.5em] text-sm md:text-base text-ink/90 mt-3">WELCOME</p>
+        <p className="font-script text-sm md:text-base text-[#d98aa0] tracking-widest">to our wedding</p>
 
         {/* Câu tiếng Anh - xanh gradient viết tay */}
         <p

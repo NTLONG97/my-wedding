@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="relative flex-1 flex flex-col justify-center px-7 py-5">
         {/* Khối 囍 — canh TRÁI */}
         <div className="relative self-start text-left max-w-[78%]">
-          <p className="font-serif italic text-ink/70 text-xs md:text-sm mb-1 ml-1">
+          <p className="font-serif italic text-ink/80 text-sm md:text-base mb-1 ml-1">
             We&apos;re getting married!
           </p>
           <div
@@ -23,7 +23,7 @@ export default function Hero() {
 
         {/* Khối lời mời + tên + ngày — canh PHẢI */}
         <div className="relative self-end text-right max-w-[86%] mt-5 flex flex-col items-end">
-          <p className="font-serif italic text-xs md:text-sm text-ink/70 max-w-xs">
+          <p className="font-serif italic text-sm md:text-base text-ink/90 max-w-xs">
             {config.wedding.invitation}
           </p>
           <h1 className="font-name text-4xl md:text-6xl text-wine-600 mt-3 leading-none">

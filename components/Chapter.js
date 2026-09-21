@@ -6,9 +6,9 @@ export default function Chapter({ chapter, accent, lines = [], images = [], alig
   const itemsAlign = { left: "items-start", right: "items-end", center: "items-center" }[align] || "items-center";
 
   return (
-    <section className="py-16 md:py-20 px-6 bg-cream-50">
+    <section className="py-16 md:py-20 px-5 bg-cream-50">
       <Reveal>
-        <div className={`max-w-lg mx-auto flex flex-col ${itemsAlign} ${textAlign}`}>
+        <div className={`relative z-20 max-w-lg mx-auto flex flex-col ${itemsAlign} ${textAlign}`}>
           {chapter && (
             <p className="font-hand tracking-[0.25em] uppercase text-sm text-gold-600 mb-2">{chapter}</p>
           )}
@@ -17,14 +17,14 @@ export default function Chapter({ chapter, accent, lines = [], images = [], alig
           )}
           <div className="space-y-1">
             {lines.map((l, i) => (
-              <p key={i} className="font-serif italic text-lg md:text-xl text-ink/80 leading-relaxed">{l}</p>
+              <p key={i} className="font-serif italic text-base text-[#241d18] leading-relaxed">{l}</p>
             ))}
           </div>
         </div>
       </Reveal>
 
       {layout === "collage" ? (
-        <div className="mt-10 md:mt-12">
+        <div className="-mt-14 md:-mt-16 relative">
           <ChapterCollage images={images} />
         </div>
       ) : (

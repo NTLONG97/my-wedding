@@ -54,13 +54,11 @@ const config = {
     title: "Tư Gia Nhà Trai",
     address: "255/8, ấp Thanh Tân, Xã Thuận Mỹ, Tỉnh Tây Ninh",
     note: "Gần trường mẫu giáo Thanh Phú Long",
+    // Toạ độ chính xác vị trí tổ chức (lấy từ Google Maps)
     mapEmbedUrl:
-      "https://www.google.com/maps?q=" +
-      encodeURIComponent("255/8, ấp Thanh Tân, Xã Thuận Mỹ, Tỉnh Tây Ninh") +
-      "&output=embed",
+      "https://www.google.com/maps?q=10.45914075850735,106.51583513229113&z=18&output=embed",
     mapLink:
-      "https://www.google.com/maps/search/?api=1&query=" +
-      encodeURIComponent("255/8, ấp Thanh Tân, Xã Thuận Mỹ, Tỉnh Tây Ninh"),
+      "https://www.google.com/maps/search/?api=1&query=10.45914075850735%2C106.51583513229113",
   },
 
   // ---------- Nhạc nền ----------
@@ -72,7 +70,7 @@ const config = {
   // ---------- Tự cuộn trình chiếu ----------
   autoScroll: {
     enabled: true,
-    durationMs: 95000, // chạy hết trang trong ~95 giây. Tăng = chậm hơn.
+    durationMs: 190000, // chạy hết trang trong ~95 giây. Tăng = chậm hơn.
     startDelayMs: 1300,
     loop: false,
   },
@@ -130,9 +128,9 @@ const config = {
     imagePosition: "center 22%",
     accent: "Welcome to our wedding",
     lines: [
-      "Hãy chuẩn bị một tâm trạng thật vui vẻ và một chiếc bụng thật đói, rồi đến chung vui cùng chúng tớ nha!",
-      "Chỉ cần có bạn ở đây, ngày vui của chúng tớ sẽ càng thêm trọn vẹn.",
-      "Hẹn gặp bạn trong ngày cưới nha ❤️",
+      "Nếu có thời gian, hãy chuẩn bị một tâm trạng thật vui vẻ và một chiếc bụng thật đói, rồi đến chung vui cùng chúng tớ nha!",
+      "Lễ cưới chắc chắn sẽ rất bận rộn, nếu có điều gì tiếp đón chưa chu đáo, mong bạn thông cảm. Dù vậy, Chỉ cần có bạn ở đây, ngày vui của chúng tớ sẽ càng thêm trọn vẹn.",
+      "Hẹn gặp bạn trong ngày cưới nha~ ❤️",
     ],
     thanks: "Thank you!",
   },

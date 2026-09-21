@@ -17,12 +17,12 @@ export default function Welcome() {
       </div>
 
       {/* Chữ ở dưới — nền sạch, đọc rõ */}
-      <div className="px-8 -mt-6 text-center max-w-lg mx-auto relative z-10">
+      <div className="px-4 -mt-6 text-center max-w-lg mx-auto relative z-10">
         <Reveal>
           <p className="font-script text-4xl md:text-5xl text-wine-600 mb-6">{w.accent}</p>
           <div className="space-y-4">
             {w.lines.map((l, i) => (
-              <p key={i} className="font-serif text-base md:text-lg text-ink/80 leading-relaxed">{l}</p>
+              <p key={i} className="font-serif text-base text-ink/90 leading-relaxed">{l}</p>
             ))}
           </div>
           <p className="font-script text-4xl md:text-5xl text-wine-600 mt-8">{w.thanks}</p>
