@@ -2,6 +2,9 @@
 import { useState } from "react";
 import config from "@/data/config";
 
+// Logo dùng làm con dấu giữa phong bì
+const SEAL_LOGO = "/images/logo-tl.png";
+
 // Màn hình mở phong bì. Bấm -> phong bì mở -> gọi onOpen().
 export default function OpeningEnvelope({ onOpen }) {
   const [opening, setOpening] = useState(false);
@@ -37,12 +40,9 @@ export default function OpeningEnvelope({ onOpen }) {
             style={{ clipPath: "polygon(0 100%, 50% 40%, 100% 100%)", background: "linear-gradient(180deg,#f3e9d6,#e8d8bb)" }} />
           <div className="env-flap absolute inset-x-0 top-0 h-1/2 z-20"
             style={{ clipPath: "polygon(0 0, 100% 0, 50% 100%)", background: "linear-gradient(180deg,#e8d8bb,#dcc59f)", borderBottom: "1px solid rgba(200,162,74,.5)" }} />
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-wine-500 to-wine-700 shadow-lg flex items-center justify-center">
-            <span className="font-script text-gold-200 text-lg md:text-xl leading-none tracking-wide">
-              {initials(config.groom.name)}
-              <span className="mx-0.5 text-sm">&amp;</span>
-              {initials(config.bride.name)}
-            </span>
+          {/* Con dấu = logo tròn "tl" (đổi ảnh tại public/images/logo-tl.png) */}
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg">
+            <img src={SEAL_LOGO} alt={`${initials(config.groom.name)} & ${initials(config.bride.name)}`} className="w-full h-full rounded-full" />
           </div>
         </div>
       </div>

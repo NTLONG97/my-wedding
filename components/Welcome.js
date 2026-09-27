@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 export default function Welcome() {
   const w = config.welcome;
   return (
-    <section className="bg-cream-50 pb-16 md:pb-20">
+    <section className="bg-cream-50 pb-8 md:pb-10">
       {/* Ảnh ở trên — mờ dần xuống nền ở đáy (hiệu ứng giống mẫu) */}
       <div className="relative w-full h-[58svh]">
         <img

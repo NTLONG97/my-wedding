@@ -5,7 +5,7 @@ import Calendar from "./Calendar";
 
 export default function EventInfo() {
   return (
-    <section className="py-20 md:py-28 px-6 bg-cream-100">
+    <section className="py-10 md:py-12 px-6 bg-cream-100">
       <div className="max-w-3xl mx-auto">
         <SectionTitle script="Save the date" title="Thời Gian & Địa Điểm" />
 

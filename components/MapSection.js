@@ -4,7 +4,7 @@ import SectionTitle from "./SectionTitle";
 
 export default function MapSection() {
   return (
-    <section className="py-20 md:py-28 px-6 bg-cream-100">
+    <section className="py-10 md:py-12 px-6 bg-cream-100">
       <div className="max-w-4xl mx-auto">
         <SectionTitle script="Find us" title="Bản Đồ" sub={config.venue.address} />
         <Reveal>

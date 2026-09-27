@@ -14,7 +14,6 @@ import CountdownSection from "@/components/CountdownSection";
 import EventInfo from "@/components/EventInfo";
 import Welcome from "@/components/Welcome";
 import RSVP from "@/components/RSVP";
-import MapSection from "@/components/MapSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -44,7 +43,6 @@ export default function Home() {
         <EventInfo />
         <Welcome />
         <RSVP />
-        <MapSection />
         <Footer />
       </main>
     </>

@@ -3,7 +3,7 @@ export default function SectionTitle({ script, title, sub, dark = false }) {
   const sc = dark ? "text-gold-200" : "text-gold-500";
   const subc = dark ? "text-white/75" : "text-ink/70";
   return (
-    <div className="text-center mb-10 md:mb-14">
+    <div className="text-center mb-6 md:mb-8">
       {script && <p className={`font-script text-3xl md:text-4xl ${sc} mb-1`}>{script}</p>}
       <h2 className={`font-serif text-2xl md:text-4xl tracking-wide ${tc}`}>{title}</h2>
       <div className="divider mt-4"><span className="text-lg">❦</span></div>

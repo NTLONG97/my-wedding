@@ -6,7 +6,7 @@ export default function Chapter({ chapter, accent, lines = [], images = [], alig
   const itemsAlign = { left: "items-start", right: "items-end", center: "items-center" }[align] || "items-center";
 
   return (
-    <section className="py-16 md:py-20 px-5 bg-cream-50">
+    <section className="pt-8 md:pt-10 pb-16 md:pb-20 px-5 bg-cream-50">
       <Reveal>
         <div className={`relative z-20 max-w-lg mx-auto flex flex-col ${itemsAlign} ${textAlign}`}>
           {chapter && (

@@ -82,18 +82,31 @@ export default function Intro() {
   );
 
   return (
-    <section className="py-16 md:py-20 px-6 bg-cream-50 text-center">
+    <section className="pt-6 md:pt-8 pb-6 md:pb-8 px-6 bg-cream-50 text-center">
       <Reveal>
-        {/* Minh hoạ */}
-        <div className="mx-auto w-40 md:w-48">
-          {wi.illustration ? (
-            <img src={wi.illustration} alt="Welcome" className="w-full h-auto" />
-          ) : (
-            <CoupleArt />
-          )}
+        {/* WELCOME + to our wedding uốn vòng cung ôm phía trên hình cô dâu chú rể */}
+        <div className="relative mx-auto w-[300px] md:w-[340px]">
+          <svg viewBox="0 0 300 92" className="block w-full h-auto" role="img" aria-label="Welcome to our wedding">
+            <defs>
+              <path id="arcWelcome" d="M -35 215 A 185 185 0 0 1 335 215" />
+              <path id="arcWedding" d="M 0 215 A 150 150 0 0 1 300 215" />
+            </defs>
+            <text style={{ fontFamily: "var(--font-serif)", fontSize: 20, letterSpacing: "0.45em", fill: "rgba(63,54,46,.9)" }}>
+              <textPath href="#arcWelcome" startOffset="50%" textAnchor="middle">WELCOME</textPath>
+            </text>
+            <text style={{ fontFamily: "var(--font-script)", fontSize: 19, letterSpacing: "0.07em", fill: "#d98aa0" }}>
+              <textPath href="#arcWedding" startOffset="50%" textAnchor="middle">to our wedding</textPath>
+            </text>
+          </svg>
+          {/* Minh hoạ (nằm lọt trong vòng cung) */}
+          <div className="mx-auto w-40 md:w-48 -mt-9 md:-mt-11">
+            {wi.illustration ? (
+              <img src={wi.illustration} alt="Welcome" className="w-full h-auto" />
+            ) : (
+              <CoupleArt />
+            )}
+          </div>
         </div>
-        <p className="font-serif tracking-[0.5em] text-sm md:text-base text-ink/90 mt-3">WELCOME</p>
-        <p className="font-script text-sm md:text-base text-[#d98aa0] tracking-widest">to our wedding</p>
 
         {/* Câu tiếng Anh - xanh gradient viết tay */}
         <p
@@ -112,7 +125,7 @@ export default function Intro() {
       </Reveal>
 
       <Reveal delay={120}>
-        <div className="mt-12 flex items-start justify-center gap-2 sm:gap-4">
+        <div className="mt-6 flex items-start justify-center gap-2 sm:gap-4">
           <div>
             <div className="w-28 h-28 md:w-36 md:h-36 rounded-full ring-4 ring-white shadow-lg bg-cream-200 mx-auto" style={circleStyle(left)} />
             <Name p={left} />

@@ -65,12 +65,17 @@ const config = {
   music: {
     src: "/music/wedding.mp3", // bỏ file nhạc vào public/music/
     autoPlayAfterOpen: true,
+    // Giây bắt đầu phát. 20 = bỏ đoạn piano dạo đầu (0:00–0:20), vào là hát câu đầu "Heart beats fast".
+    // Tham khảo: 61.8 = điệp khúc 1 · 128.9 = điệp khúc 2 (cao trào) · 0 = phát từ đầu bài.
+    startAt: 20,
+    fadeInMs: 600, // nhạc tăng dần âm lượng trong 0.6 giây
+    volume: 0.6, // âm lượng (0 - 1)
   },
 
   // ---------- Tự cuộn trình chiếu ----------
   autoScroll: {
     enabled: true,
-    durationMs: 190000, // chạy hết trang trong ~95 giây. Tăng = chậm hơn.
+    durationMs: 162000, // chạy hết trang trong ~95 giây. Tăng = chậm hơn.
     startDelayMs: 1300,
     loop: false,
   },
@@ -102,7 +107,7 @@ const config = {
       ],
     },
     {
-      images: ["/images/MN_05558.jpg", "/images/MN_05153.jpg"],
+      images: ["/images/MN_05558.jpg", { src: "/images/MN_05829.jpg", position: "center 15%" }],
       align: "left",
       layout: "collage", // "collage" (ghép chồng) hoặc "stack" (xếp dọc)
       chapter: "Chapter Two",
@@ -128,9 +133,9 @@ const config = {
     imagePosition: "center 22%",
     accent: "Welcome to our wedding",
     lines: [
-      "Nếu có thời gian, hãy chuẩn bị một tâm trạng thật vui vẻ và một chiếc bụng thật đói, rồi đến chung vui cùng chúng tớ nha!",
-      "Lễ cưới chắc chắn sẽ rất bận rộn, nếu có điều gì tiếp đón chưa chu đáo, mong bạn thông cảm. Dù vậy, Chỉ cần có bạn ở đây, ngày vui của chúng tớ sẽ càng thêm trọn vẹn.",
-      "Hẹn gặp bạn trong ngày cưới nha~ ❤️",
+      "Hành trình tình yêu của chúng mình đã cập bến tràn ngập sự hạnh phúc. Ngày đặc biệt đánh dấu chặng đường mới này sẽ càng thêm trọn vẹn khi có sự đồng hành của những người thân yêu.",
+      "Sự có mặt của bạn không chỉ là lời chúc phúc, mà còn là niềm vui to lớn đối với tụi mình trong ngày trọng đại này. hihi. Hãy dành chút thời gian đến chung vui và ghi lại những kỷ niệm đẹp nhất cùng tụi mình nhé!",
+      "Hẹn gặp bạn ở lễ cưới của chúng mình nha~ ❤️",
     ],
     thanks: "Thank you!",
   },

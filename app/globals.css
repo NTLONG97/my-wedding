@@ -44,7 +44,7 @@ body.locked { overflow: hidden; height: 100vh; }
 .reveal {
   opacity: 0;
   transform: translateY(38px);
-  transition: opacity 1s ease, transform 1s ease;
+  transition: opacity 2.3s ease-out, transform 2.3s ease-out;
   will-change: opacity, transform;
 }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
@@ -69,7 +69,7 @@ body.locked { overflow: hidden; height: 100vh; }
 @keyframes kb { from { transform: scale(1.12); } to { transform: scale(1); } }
 
 /* Chữ chương hiện lên */
-.rise { animation: rise 1.2s ease both; }
+.rise { animation: rise 2.4s ease-out both; }
 @keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 
 /* ---------- Slideshow / lightbox ảnh ---------- */
@@ -97,7 +97,7 @@ body.locked { overflow: hidden; height: 100vh; }
 
 /* ---------- Phong bì mở thiệp ---------- */
 .envelope-wrap { perspective: 1200px; }
-.env-flap { transition: transform 1.1s ease; transform-origin: top; transform-style: preserve-3d; }
+.env-flap { transition: transform 1.6s ease; transform-origin: top; transform-style: preserve-3d; }
 .env-open .env-flap { transform: rotateX(180deg); }
 
 /* ---------- Ba trái tim đập ---------- */
@@ -105,6 +105,6 @@ body.locked { overflow: hidden; height: 100vh; }
 @keyframes beat { 0%,100% { transform: scale(1); } 50% { transform: scale(1.28); } }
 
 /* ---------- Ghép ảnh: trượt từ trái/phải vào giữa ---------- */
-.slide-left  { opacity: 0; transform: translateX(-70px); transition: opacity 1s ease, transform 1s ease; }
-.slide-right { opacity: 0; transform: translateX(70px);  transition: opacity 1s ease, transform 1s ease; }
+.slide-left  { opacity: 0; transform: translateX(-70px); transition: opacity 2.5s ease-out, transform 2.5s ease-out; }
+.slide-right { opacity: 0; transform: translateX(70px);  transition: opacity 2.5s ease-out, transform 2.5s ease-out; }
 .slide-in    { opacity: 1 !important; transform: translateX(0) !important; }
