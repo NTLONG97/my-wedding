@@ -28,14 +28,14 @@ export default function ChapterCollage({ images = [] }) {
       <div
         className={`absolute left-0 bottom-0 w-[58%] aspect-[3/4] rounded-lg overflow-hidden shadow-2xl ring-[6px] ring-white bg-cream-200 slide-left ${show ? "slide-in" : ""}`}
       >
-        {a && <img src={srcOf(a)} alt="" loading="lazy" className="w-full h-full object-cover" style={{ objectPosition: posOf(a) }} />}
+        {a && <img decoding="async" src={srcOf(a)} alt="" loading="lazy" className="w-full h-full object-cover" style={{ objectPosition: posOf(a) }} />}
       </div>
       {/* Ảnh phải (cao hơn, đè lên) */}
       <div
         className={`absolute right-0 top-0 w-[50%] aspect-[3/4] rounded-lg overflow-hidden shadow-2xl ring-[6px] ring-white bg-cream-200 slide-right ${show ? "slide-in" : ""}`}
         style={{ transitionDelay: "0.15s" }}
       >
-        {b && <img src={srcOf(b)} alt="" loading="lazy" className="w-full h-full object-cover" style={{ objectPosition: posOf(b) }} />}
+        {b && <img decoding="async" src={srcOf(b)} alt="" loading="lazy" className="w-full h-full object-cover" style={{ objectPosition: posOf(b) }} />}
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ export default function Welcome() {
     <section className="bg-cream-50 pb-8 md:pb-10">
       {/* Ảnh ở trên — mờ dần xuống nền ở đáy (hiệu ứng giống mẫu) */}
       <div className="relative w-full h-[58svh]">
-        <img
+        <img decoding="async"
           src={w.image}
           alt=""
           className="w-full h-full object-cover"

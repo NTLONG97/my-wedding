@@ -28,7 +28,7 @@ export default function RSVP() {
   const field = "w-full rounded-lg border border-gold-400/40 bg-cream-50 px-3 py-1.5 outline-none focus:border-wine-500";
 
   return (
-    <section className="py-10 md:py-12 px-6 bg-cream-100">
+    <section className="pt-10 md:pt-12 pb-3 md:pb-4 px-6 bg-cream-100">
       <div className="max-w-2xl mx-auto">
         <SectionTitle script="Save your seat" title="Xác Nhận Tham Dự"
           sub="Vui lòng phản hồi để gia đình chuẩn bị đón tiếp chu đáo." />

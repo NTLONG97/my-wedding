@@ -42,7 +42,7 @@ export default function Hero() {
       {/* ===== Nửa dưới: ảnh (thu vào, bo góc) ===== */}
       <div className="px-4 pb-4 shrink-0">
         <div className="relative h-[56svh] overflow-hidden shadow-md ring-1 ring-gold-400/20">
-          <img
+          <img decoding="async"
             src={config.heroImage}
             alt="Ảnh cưới"
             className="w-full h-full object-cover"

@@ -75,7 +75,7 @@ const config = {
   // ---------- Tự cuộn trình chiếu ----------
   autoScroll: {
     enabled: true,
-    durationMs: 162000, // chạy hết trang trong ~95 giây. Tăng = chậm hơn.
+    durationMs: 135000, // chạy hết trang trong ~95 giây. Tăng = chậm hơn.
     startDelayMs: 1300,
     loop: false,
   },
@@ -107,7 +107,10 @@ const config = {
       ],
     },
     {
-      images: ["/images/MN_05558.jpg", { src: "/images/MN_05829.jpg", position: "center 15%" }],
+      images: [
+        "/images/MN_05558.jpg",
+        { src: "/images/MN_05829.jpg", position: "center 15%" },
+      ],
       align: "left",
       layout: "collage", // "collage" (ghép chồng) hoặc "stack" (xếp dọc)
       chapter: "Chapter Two",

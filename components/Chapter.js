@@ -32,7 +32,7 @@ export default function Chapter({ chapter, accent, lines = [], images = [], alig
           {images.map((src, i) => (
             <Reveal key={src} delay={i * 120}>
               <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-gold-400/20 aspect-[4/5] bg-cream-200">
-                <img src={src} alt="" loading="lazy" className="w-full h-full object-cover block" />
+                <img decoding="async" src={src} alt="" loading="lazy" className="w-full h-full object-cover block" />
               </div>
             </Reveal>
           ))}
